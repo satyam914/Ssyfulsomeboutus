@@ -1,137 +1,101 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>About Us - FulsomeX</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      transition: max-height 0.5s ease-in-out;
-      max-height: 0;
-    }
-
-    .container.open {
-      max-height: 1000px;
-    }
-
-    h1 {
-      color: #333;
-      text-align: center;
-      font-size: 32px;
-      transition: color 0.5s ease-in-out;
-    }
-
-    .container.open h1 {
-      color: red;
-    }
-
-    h2 {
-      color: #666;
-      font-size: 24px;
-      transition: color 0.5s ease-in-out;
-    }
-
-    .container.open h2 {
-      color: brown;
-    }
-
-    p {
-      color: #444;
-      transition: color 0.5s ease-in-out;
-    }
-
-    .container.open p {
-      color: #555;
-    }
-
-    .quote {
-      font-style: italic;
-      color: #888;
-      margin-top: 20px;
-      transition: color 0.5s ease-in-out;
-    }
-
-    .container.open .quote {
-      color: #999;
-    }
-
-    button {
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      padding: 20px 30px;
-      border-radius: 20px;
-       
-      cursor: pointer;
-      transition: background-color 0.3s ease-in-out;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
-  <script>
-    window.addEventListener("DOMContentLoaded", function() {
-      var container = document.querySelector(".container");
-      var openButton = document.querySelector("#open-button");
-
-      openButton.addEventListener("click", function() {
-        container.classList.toggle("open");
-      });
-    });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevateHub Notification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .section {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #3498db;
+        }
+        .section p {
+            color: #777;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .news {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .news h3 {
+            color: #333;
+        }
+        .news p {
+            color: #555;
+        }
+    </style>
 </head>
-
-<body>
-  <div class="container">
-   <font color=red size=6><h1>About Us</h1></font>
-    <h2>FulsomeX: <font color="blue">A tech startup with Big Dreams</font></h2>
-
-    <p>FulsomeX is a company and organization founded by two 11th-grade students, Shivank Pandey and Satyam Singh Yadav. The company's goal is to create innovative tech items, military equipment, weapons, and automobiles. At present, FulsomeX publishes blogs on tech, science, and engineering.</p>
-
-    <p>FulsomeX was founded on June 29, 2023, in Prayagraj, India. The company's headquarters is located in a small apartment that the two founders share. FulsomeX is a bootstrapped company, meaning that the founders have funded the company themselves.</p>
-
-    <p>The company's name, FulsomeX, is a combination of the words "fulsome" and "X." Fulsome means "abundant" or "copious," and X represents the company's potential to achieve great things.</p>
-
-    <p>FulsomeX's mission is to "create innovative products that make a positive impact on the world." The company's vision is to be "a leading provider of tech, military, and automotive products."</p>
-
-    <p>FulsomeX is still in its early stages, but the company has big dreams. The founders are passionate about technology and engineering, and they are determined to make a difference in the world.</p>
-
-    <h3>About the Founders</h3>
-
-    <p><font color=green>Shivank Pandey and Satyam Singh Yadav</font>are both 11th-grade students at a school in Lucknow, India. They met in their science class, and they quickly bonded over their shared love of technology.</p>
-
-    <p>Shivank is interested in computer science and artificial intelligence. He is also a talented programmer. Satyam is interested in mechanical engineering and robotics. He is also a skilled engineer.</p>
-
-    <p>The two friends decided to start FulsomeX because they wanted to create something that would make a difference in the world. They believe that technology has the power to solve some of the world's biggest problems, and they are determined to use their skills to make a positive impact.</p>
-
-    <h3>The Future of FulsomeX</h3>
-
-    <p>FulsomeX is still in its early stages, but the company has big dreams. The founders are passionate about technology and engineering, and they are determined to make a difference in the world.</p>
-
-    <p>In the future, FulsomeX hopes to develop innovative tech items, military equipment, weapons, and automobiles. The company also hopes to publish more blogs on tech, science, and engineering.</p>
-
-    <p>FulsomeX is a company with a bright future. The founders are talented and driven, and they have a clear vision for the company. With hard work and dedication, FulsomeX has the potential to achieve great things.</p>
-  </div>
-  <br></br>
-   <br></br>
-   
-
-  <center><button id="open-button"><h2><font color=red size=5>Click to Now About us</font></h2></button></center>
+<body >
+    <header>
+        <img src="https://see.fontimg.com/api/renderfont4/X3v0P/eyJyIjoiZnMiLCJoIjo3NiwidyI6MjAwMCwiZnMiOjM4LCJmZ2MiOiIjRTAxMDEwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/RWxldmF0ZUh1YiBOb3RpZmljYXRpb24/the-future.png" width=100%>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>Join Organization</h2>
+            <p><a href="https://xtr-platinum.formaloo.net/cch25"><font color=red>Click here</font></a></p>
+        </div>
+        <div class="section">
+            <h2>Ask Questions</h2>
+            <p><a href="https://satyam914.github.io/Review/"><font color=red>Click here</font></a></p>
+        </div>
+        <div class="section">
+            <h2>Complain bugs</h2>
+            <p><a href="mailto:fulsome.society.of.extrme.and.ssy@gmail.com"><font color=red>Click here</font></a></p>
+        </div>
+        <div class="section">
+            <h2>Attendance</h2>
+            <p><a href="https://satyam914.github.io/Attendance-sheet/"><font color=red>Click here</font></a></p>
+        </div>
+    </div>
+    <div class="news">
+        <h3><font color=red><u>Notice</u></h3></font>
+        <font color=Blue>Check Notification section daily for update specially client and staff bot.h <br>Thanks & Regard<br>Verit
+        </font></div>
+        <center><font color=Gold size=6>Ads By Adsense</font>
+<script async="async" data-cfasync="false" src="//pl20197101.highcpmrevenuegate.com/9870af56e999c84daa7f6d118c87d76e/invoke.js"></script>
+<div id="container-9870af56e999c84daa7f6d118c87d76e"></div>
+</center>
+    <footer>
+        <p>&copy;<font color=yellow>2023 ElevateHub Notification. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
